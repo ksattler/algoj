@@ -45,16 +45,16 @@
 
 ### Kapitel 9:
 
-* Programm 9-1: [Implementierung als Subklasse von Thread](ch9/Heartbeat1.java)
-* Programm 9-2: [Implementierung über Runnable-Schnittstelle](ch9/Heartbeat2.java)
-* Programm 9-3: [Synchronisation von Producer-Consumer](ch9/Producer.java)
-* Programm 9-4: [Parallele Berechnung der Fibonacci-Zahlen](ch9/Fibonacci.java)
-* Programm 9-5: [Thread-Pool zur parallelen Berechnung](ch9/FibonacciPool.java)
-* Programm 9-6: [Grobstruktur eines Philosophen](ch9/Philosopher.java#)
-* Programm 9-7: [Implementierung der Gabeln](ch9/Forks.java)
-* Programm 9-8: [Vollständige Implementierung eines Philosophen](ch9/Philosopher.java#)
-* Programm 9-9: [Initialisierung der fünf Philosophen](ch9/hilosopher.java#)
-* Programm 9-10: [Semaphor als Java-Klasse](ch9/Semaphore.java)
+* Programm 9-1: [Implementierung als Subklasse von Thread](ch_09/Heartbeat1.java)
+* Programm 9-2: [Implementierung über Runnable-Schnittstelle](ch_09/Heartbeat2.java)
+* Programm 9-3: [Synchronisation von Producer-Consumer](ch_09/Producer.java)
+* Programm 9-4: [Parallele Berechnung der Fibonacci-Zahlen](ch_09/Fibonacci.java)
+* Programm 9-5: [Thread-Pool zur parallelen Berechnung](ch_09/FibonacciPool.java)
+* Programm 9-6: [Grobstruktur eines Philosophen](ch_09/Philosopher.java#)
+* Programm 9-7: [Implementierung der Gabeln](ch_09/Forks.java)
+* Programm 9-8: [Vollständige Implementierung eines Philosophen](ch_09/Philosopher.java#)
+* Programm 9-9: [Initialisierung der fünf Philosophen](ch_09/hilosopher.java#)
+* Programm 9-10: [Semaphor als Java-Klasse](ch_09/Semaphore.java)
 
 ### Kapitel 12:
 
