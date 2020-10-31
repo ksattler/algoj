@@ -184,7 +184,7 @@ public class Sort {
   }
   
   /*
-   * Implementierung des QuickSort
+   * Implementierung des RadixSort
    */
   static void radixSort(int[] array) {
     for (int i = 0; i < 3; i++)

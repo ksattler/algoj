@@ -24,9 +24,9 @@
 * Programm 5-3: [Implementierung des InsertionSort](ch_05/Sort.java#L31)
 * Programm 5-4: [Implementierung des SelectionSort](ch_05/Sort.java#L49)
 * Programm 5-5: [Implementierung des BubbleSort](ch_05/Sort.java#L87)
-* Programm 5-6: [Implementierung des MergeSort](ch_05/Sort.java#L138)
-* Programm 5-7: [Implementierung des QuickSort](ch_05/Sort.java#189)
-* Programm 5-8: [Implementierung des RadixSort](ch_05/Sort.java#)
+* Programm 5-6: [Implementierung des MergeSort](ch_05/Sort.java#L137)
+* Programm 5-7: [Implementierung des QuickSort](ch_05/Sort.java#182)
+* Programm 5-8: [Implementierung des RadixSort](ch_05/Sort.java#189)
 
 ### Kapitel 6:
 
