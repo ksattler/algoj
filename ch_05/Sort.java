@@ -32,9 +32,9 @@ public class Sort {
     for (int i = 1; i < array.length; i++) {
       int marker = i;
       int temp = array[i];
-      // für alle Elemente links vom Marker-Feld
+      // fï¿½r alle Elemente links vom Marker-Feld
       while (marker > 0 && array[marker - 1] > temp) {
-	// verschiebe alle größeren Element nach hinten
+	// verschiebe alle grï¿½ï¿½eren Element nach hinten
 	array[marker] = array[marker - 1];
 	marker--;
       }
@@ -49,7 +49,7 @@ public class Sort {
   static void selectionSort (int[] array) {
     int marker = array.length - 1;
     while (marker >= 0) {
-      // bestimme größtes Element
+      // bestimme grï¿½ï¿½tes Element
       int max = 0;
       for (int i = 1; i <= marker; i++)
 	if (array[i] > array[max])
@@ -106,7 +106,7 @@ public class Sort {
    * Implementierung des MergeSort
    */
   
-  // Hilfsmethode für rekursives Sortieren durch Mischen
+  // Hilfsmethode fÃ¼r rekursives Sortieren durch Mischen
   static void msort (int[] array, int le, int ri) {
     int i, j, k;
     int[] b = new int[array.length];
@@ -120,18 +120,17 @@ public class Sort {
       
       // Hilfsfeld aufbauen
       for (k = le; k <= mid; k++)
-	b[k] = array[k];
+	      b[k] = array[k];
       for (k = mid; k < ri; k++)
-	b[ri + mid - k] = array[k + 1];
+	      b[ri + mid - k] = array[k + 1];
 
-      // Ergebnisse mischen über Hilfsfeld b
+      // Ergebnisse mischen ï¿½ber Hilfsfeld b
       i = le; j = ri;	
       for (k = le; k <= ri; k++)
-	if (b[i] < b[j])
-	  array[k] = b[i++];
-	else
-	  array[k] = b[j--];
-      
+	      if (b[i] < b[j])
+	        array[k] = b[i++];
+	      else
+	        array[k] = b[j--];
     }
   }
   
@@ -143,45 +142,39 @@ public class Sort {
    * Implementierung des QuickSort
    */
   
-  // Hilfsmethode für rekursives Sortieren
+  // Hilfsmethode fÃ¼r rekursives Sortieren
   static void qsort (int[] array, int le, int ri) {
     int lo = le, hi = ri;
-    
-    System.out.println ("qsort --> " + le + " - " + ri);
     
     if (hi > lo) {
       // Pivotelement bestimmen
       int mid = array[(lo + hi) / 2];
-      System.out.println ("mid = " + mid);
       while (lo <= hi) {
-	// Erstes Element suchen, das größer oder gleich dem
-	// Pivotelement ist, beginnend vom linken Index
-	while (lo < ri && array[lo] < mid)
-	  ++lo;
+	      // Erstes Element suchen, das grï¿½ï¿½er oder gleich dem
+	      // Pivotelement ist, beginnend vom linken Index
+	      while (lo < ri && array[lo] < mid)
+	        ++lo;
 	
-	// Element suchen, das kleiner oder gleich dem
-	// Pivotelement ist, beginnend vom rechten Index
-	while (hi > le && array[hi] > mid)
-	  --hi;
+	      // Element suchen, das kleiner oder gleich dem
+	      // Pivotelement ist, beginnend vom rechten Index
+	      while (hi > le && array[hi] > mid)
+	        --hi;
 	
-	// Wenn Indexe nicht gekreuzt --> Inhalte vertauschen
-	if (lo <= hi) {
-	  swap(array, lo, hi);
-	  System.out.println ("swap: " + lo + ", " + hi);
-	  ++lo;
-	  --hi;
-	}
+	      // Wenn Indexe nicht gekreuzt --> Inhalte vertauschen
+	      if (lo <= hi) {
+	        swap(array, lo, hi);
+	        ++lo;
+	        --hi;
+	      }
       }
       // Linke Partition sortieren
       if (le < hi) {
-	System.out.println ("1-qsort: " + le + "-" + hi + " :" + hi + "," + lo);
-	qsort (array, le, hi);
+	      qsort (array, le, hi);
       }
       
       // Rechte Partition sortieren
       if (lo < ri) {
-	System.out.println ("2-qsort: " + lo + "-" + ri + " :" + hi + ", " + lo);
-	qsort( array, lo, ri);
+	      qsort( array, lo, ri);
       }
     }
   }
@@ -190,32 +183,74 @@ public class Sort {
     qsort (array, 0, array.length - 1);
   }
   
-  public static void main(String[] args) {
-	/*
-	int[] array = null;
-	array = initArray (20);
-	mergeSort (array);
-	printArray (array);
+  /*
+   * Implementierung des QuickSort
+   */
+  static void radixSort(int[] array) {
+    for (int i = 0; i < 3; i++)
+      radixSortStep(array, i, 10);
+  }
 
-	array = initArray (20);
-	quickSort (array);
-	printArray (array);
+  static int getDigit(int val, int dpos, int base) {
+    int[] div = { 1, 10, 100, 1000, 10000 };
+    return (val / div[dpos]) % base;
+  }
 
-	array = initArray (20);
-	selectionSort (array);
-	printArray (array);
+  static void radixSortStep(int[] array, int d, int base) {
+    int[] histo = new int[base]; // Histogramm
+    int[] offset = new int[base]; // aktuelle Position pro Partition
 
-	array = initArray (20);
-	insertionSort (array);
-	printArray (array);
+    // temporÃ¤res Feld
+    int[] tmp = new int[array.length];
+    System.arraycopy(array, 0, tmp, 0, array.length);
 
-	array = initArray (20);
-	bubbleSort2 (array);
-	printArray (array);
-	*/
-	int[] array = { 8, 2, 1, 5, 9, 7, 3 };
-	mergeSort (array);
-	printArray (array);
-
+    // Histogramm konstruieren
+    for (int i = 0; i < array.length; i++) {
+        int digit = getDigit(array[i], d, base);
+        histo[digit]++;
     }
+    // kumulierte HÃ¤ufigkeiten berechnen
+    int sum = 0;
+    for (int i = 0; i < histo.length; i++) {
+        sum += histo[i];
+        if (histo[i] > 0) histo[i] = sum - histo[i];
+    }
+
+    // Elemente an Position kopieren
+    for (int i = 0; i < tmp.length; i++) {
+      int digit = getDigit(tmp[i], d, base);
+      int pos = histo[digit] + offset[digit]++;
+      array[pos] = tmp[i];
+    }
+}
+  public static void main(String[] args) {
+	  int[] array = null;
+	  array = initArray (20);
+	  mergeSort (array);
+	  printArray (array);
+
+	  array = initArray (20);
+	  quickSort (array);
+	  printArray (array);
+
+	  array = initArray (20);
+	  selectionSort (array);
+	  printArray (array);
+
+	  array = initArray (20);
+	  insertionSort (array);
+	  printArray (array);
+
+	  array = initArray (20);
+	  bubbleSort2 (array);
+	  printArray (array);
+	
+	  array = initArray (20);
+	  mergeSort (array);
+	  printArray (array);
+
+	  array = initArray (20);
+	  radixSort (array);
+	  printArray (array);
+  }
 }

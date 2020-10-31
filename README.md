@@ -21,22 +21,22 @@
 
 * Programm 5-1: [Sequenzielle Suche](ch_05/SeqSearch.java)
 * Programm 5-2: [Binäre Suche](ch_05/BinSearch.java)
-* Programm 5-3: [Implementierung des InsertionSort](ch_05/Sort.java#111)
-* Programm 5-4: [Implementierung des SelectionSort](ch_05/Sort.java#)
-* Programm 5-5: [Implementierung des BubbleSort](ch_05/Sort.java#)
-* Programm 5-6: [Implementierung des MergeSort](ch_05/Sort.java#)
-* Programm 5-7: [Implementierung des QuickSort](ch_05/Sort.java#)
+* Programm 5-3: [Implementierung des InsertionSort](ch_05/Sort.java#L31)
+* Programm 5-4: [Implementierung des SelectionSort](ch_05/Sort.java#L49)
+* Programm 5-5: [Implementierung des BubbleSort](ch_05/Sort.java#L87)
+* Programm 5-6: [Implementierung des MergeSort](ch_05/Sort.java#L138)
+* Programm 5-7: [Implementierung des QuickSort](ch_05/Sort.java#189)
 * Programm 5-8: [Implementierung des RadixSort](ch_05/Sort.java#)
 
 ### Kapitel 6:
 
-* Programm 6-1: [Einfacher Markov-Interpreter in Java](ch6/)
-* Programm 6-2: [Klasse für die Konfiguration](ch6/) 
-* Programm 6-3: [Schnittstelle für Befehle](ch6/)
-* Programm 6-4: [Implementierung des Befehls LOAD](ch6/) 
-* Programm 6-5: [Implementierung des Befehls IF-GOTO](ch6/) 
-* Programm 6-6: [Implementierung der Registermaschine](ch6/)
-* Programm 6-7: [Programmausführung mit der Registermaschine](ch6/) 
+* Programm 6-1: [Einfacher Markov-Interpreter in Java](ch_06/)
+* Programm 6-2: [Klasse für die Konfiguration](ch_06/) 
+* Programm 6-3: [Schnittstelle für Befehle](ch_06/)
+* Programm 6-4: [Implementierung des Befehls LOAD](ch_06/) 
+* Programm 6-5: [Implementierung des Befehls IF-GOTO](ch_06/) 
+* Programm 6-6: [Implementierung der Registermaschine](ch_06/)
+* Programm 6-7: [Programmausführung mit der Registermaschine](ch_06/) 
 
 ### Kapitel 8:
 
