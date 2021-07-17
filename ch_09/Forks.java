@@ -1,4 +1,4 @@
-class Forks {
+public class Forks {
   // 5 Gabeln: true -> frei, false -> belegt
   // Beginn: alle Gabeln sind verfügbar
   private boolean forks[] = {
