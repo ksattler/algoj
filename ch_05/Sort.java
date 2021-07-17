@@ -32,9 +32,9 @@ public class Sort {
     for (int i = 1; i < array.length; i++) {
       int marker = i;
       int temp = array[i];
-      // f�r alle Elemente links vom Marker-Feld
+      // für alle Elemente links vom Marker-Feld
       while (marker > 0 && array[marker - 1] > temp) {
-	// verschiebe alle gr��eren Element nach hinten
+	// verschiebe alle größeren Element nach hinten
 	array[marker] = array[marker - 1];
 	marker--;
       }
@@ -49,7 +49,7 @@ public class Sort {
   static void selectionSort (int[] array) {
     int marker = array.length - 1;
     while (marker >= 0) {
-      // bestimme gr��tes Element
+      // bestimme größtes Element
       int max = 0;
       for (int i = 1; i <= marker; i++)
 	if (array[i] > array[max])
@@ -124,7 +124,7 @@ public class Sort {
       for (k = mid; k < ri; k++)
 	      b[ri + mid - k] = array[k + 1];
 
-      // Ergebnisse mischen �ber Hilfsfeld b
+      // Ergebnisse mischen über Hilfsfeld b
       i = le; j = ri;	
       for (k = le; k <= ri; k++)
 	      if (b[i] < b[j])
@@ -150,7 +150,7 @@ public class Sort {
       // Pivotelement bestimmen
       int mid = array[(lo + hi) / 2];
       while (lo <= hi) {
-	      // Erstes Element suchen, das gr��er oder gleich dem
+	      // Erstes Element suchen, das größer oder gleich dem
 	      // Pivotelement ist, beginnend vom linken Index
 	      while (lo < ri && array[lo] < mid)
 	        ++lo;

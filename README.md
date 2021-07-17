@@ -41,7 +41,7 @@
 ### Kapitel 8:
 
 * Programm 8-1: [Java-Umsetzung des Spielablaufs](ch_08/TicTacToe.java#L189)
-* Programm 8-2: [Zugberechnung für Tic Tac Toe](ch_08/TicTacToe.java#125)
+* Programm 8-2: [Zugberechnung für Tic Tac Toe](ch_08/TicTacToe.java#L125)
 
 ### Kapitel 9:
 
@@ -70,7 +70,7 @@
 * Programm 13-3: [Definition der Queue-Schnittstelle](ch_13/Queue.java)
 * Programm 13-4: [Implementierung des Stacks auf Basis eines Feldes](ch_13/ArrayStack.java)
 * Programm 13-5: [Implementierung der Queue auf Basis eines Feldes](ch_13/ArrayQueue.java)
-* Programm 13-6: [Definition der Knotenklasse der Liste](ch_13/List.java#2)
+* Programm 13-6: [Definition der Knotenklasse der Liste](ch_13/List.java#L2)
 * Programm 13-7: [Definition der Klasse List](ch_13/List.java)
 * Programm 13-8: [Implementierung des Stacks auf Basis von List](ch_13/ListStack.java)
 * Programm 13-9: [Klasse Node für eine doppelt verkettete Liste](ch_13/DList.java#2)
@@ -81,13 +81,13 @@
 ### Kapitel 14:
 
 * Programm 14-1: [Knotenklasse für BinaryTree](ch_14/TreeNode.java)
-* Programm 14-2: [raversierungsmethoden I](ch_14/BinaryTree.java#53)
-* Programm 14-3: [Traversierung im binären Baum](ch_14/BinaryTree.java#88)
-* Programm 14-4: [Traversierungsmethoden II](ch_14/BinaryTree.java#77)
+* Programm 14-2: [raversierungsmethoden I](ch_14/BinaryTree.java#L53)
+* Programm 14-3: [Traversierung im binären Baum](ch_14/BinaryTree.java#L88)
+* Programm 14-4: [Traversierungsmethoden II](ch_14/BinaryTree.java#L77)
 * Programm 14-5: [Vergleichsmethode für die Klasse TreeNode](ch_14/)
 * Programm 14-6: [Suchoperationen für die Klasse BinaryTree](ch_14/BinarySearchTree.java#28)
-* Programm 14-7: [Einfügen für die Klasse BinaryTree](ch_14/BinarySearchTree.java#7)
-* Programm 14-8: [Löschen für die Klasse BinaryTree](ch_14/BinarySearchTree.java#78)
+* Programm 14-7: [Einfügen für die Klasse BinaryTree](ch_14/BinarySearchTree.java#L7)
+* Programm 14-8: [Löschen für die Klasse BinaryTree](ch_14/BinarySearchTree.java#L78)
 * Programm 14-9: [Knotenklasse für RedBlackTree](ch_14/)
 * Programm 14-10: [Einfügen im Rot-Schwarz-Baum](ch_14/)
 * Programm 14-11: [Splitten von 4-Knoten im Rot-Schwarz-Baum](ch_14/)
@@ -112,8 +112,8 @@
 * Programm 15-2: [Hashtabelle mit Verkettung der Überläufer](ch_15/LinkedHashTable.java)
 * Programm 15-3: [Hashtabelle mit linearem Sondieren](ch_15/HashTable.java)
 * Programm 15-4: [Klasse für das erweiterbare Hashen ](ch15/ExtendibleHashing.java)
-* Programm 15-5: [Initialisierung beim erweiterbaren Hashen](ch_15/ExtendibleHashing.java#42)
-* Programm 15-6: [Verdopplung der Indexgröße](ch_15/ExtendibleHashing.java#49)
+* Programm 15-5: [Initialisierung beim erweiterbaren Hashen](ch_15/ExtendibleHashing.java#L42)
+* Programm 15-6: [Verdopplung der Indexgröße](ch_15/ExtendibleHashing.java#L49)
 * Programm 15-7: [Einfügen beim erweiterbaren Hashen](ch_15/ExtendibleHashing.java#60)
 * Programm 15-8: [Split eines Blocks](ch_15/ExtendibleHashing.java#84)
 
