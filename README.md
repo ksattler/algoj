@@ -81,7 +81,7 @@
 ### Kapitel 14:
 
 * Programm 14-1: [Knotenklasse für BinaryTree](ch_14/TreeNode.java)
-* Programm 14-2: [raversierungsmethoden I](ch_14/BinaryTree.java#L53)
+* Programm 14-2: [Traversierungsmethoden I](ch_14/BinaryTree.java#L53)
 * Programm 14-3: [Traversierung im binären Baum](ch_14/BinaryTree.java#L88)
 * Programm 14-4: [Traversierungsmethoden II](ch_14/BinaryTree.java#L77)
 * Programm 14-5: [Vergleichsmethode für die Klasse TreeNode](ch_14/)
@@ -114,8 +114,8 @@
 * Programm 15-4: [Klasse für das erweiterbare Hashen ](ch15/ExtendibleHashing.java)
 * Programm 15-5: [Initialisierung beim erweiterbaren Hashen](ch_15/ExtendibleHashing.java#L42)
 * Programm 15-6: [Verdopplung der Indexgröße](ch_15/ExtendibleHashing.java#L49)
-* Programm 15-7: [Einfügen beim erweiterbaren Hashen](ch_15/ExtendibleHashing.java#60)
-* Programm 15-8: [Split eines Blocks](ch_15/ExtendibleHashing.java#84)
+* Programm 15-7: [Einfügen beim erweiterbaren Hashen](ch_15/ExtendibleHashing.java#L60)
+* Programm 15-8: [Split eines Blocks](ch_15/ExtendibleHashing.java#L84)
 
 ### Kapitel 16:
 

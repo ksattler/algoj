@@ -39,6 +39,6 @@ public class HashTable implements Hashing {
     tbl.add ("Hash");
 
     System.out.println ("Du: " + tbl.contains ("Du"));
-    System.out.println ("gro�er: " + tbl.contains ("gro�er"));
+    System.out.println ("großer: " + tbl.contains ("großer"));
   }
 }
